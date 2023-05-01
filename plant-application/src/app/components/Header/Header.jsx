@@ -1,27 +1,45 @@
 import Link from "next/link";
+import styles from "./header.module.css";
 
 const Header = () => {
   return (
     <div>
-      <p>
-        Hi, <span className="username">Jon Jackson!</span>
-      </p>
-      <p>4 Flowers</p>
+      <div className={styles.pictureGreetingContainer}>
+        <img
+          className={styles.profilePicture}
+          src="/images/Ben.jpeg"
+          alt="profile"
+        />
+        <p className={styles.greeting}>
+          Hi, <span className="username">Ben!</span>
+        </p>
+      </div>
+      <p className={styles.flowerCount}>4 Flowers</p>
       <ul className="homepage-nav">
         <li className="homepage-nav-item">
-          <Link href="/">All Flowers</Link>
+          <Link className={styles.link} href="/">
+            All Flowers
+          </Link>
         </li>
         <li className="homepage-nav-item">
-          <Link href="/indoors">Indoors</Link>
+          <Link className={styles.link} href="/indoors">
+            Indoors
+          </Link>
         </li>
         <li className="homepage-nav-item">
-          <Link href="/outdoors">Outdoors</Link>
+          <Link className={styles.link} href="/outdoors">
+            Outdoors
+          </Link>
         </li>
         <li className="homepage-nav-item">
-          <Link href="/organic">Organic</Link>
+          <Link className={styles.link} href="/organic">
+            Organic
+          </Link>
         </li>
         <li className="homepage-nav-item">
-          <Link href="/garden">Garden</Link>
+          <Link className={styles.link} href="/garden">
+            Garden
+          </Link>
         </li>
       </ul>
     </div>

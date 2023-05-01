@@ -1,0 +1,24 @@
+.profilePicture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* margin-left: 15px;
+  margin-top: 15px; */
+}
+
+.flowerCount {
+  color: rgb(137, 137, 137);
+}
+
+.link {
+  color: black;
+}
+
+.pictureGreetingContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.greeting {
+  margin-left: 10px;
+}
