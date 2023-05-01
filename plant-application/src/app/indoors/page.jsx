@@ -1,8 +1,11 @@
+"use client";
+import PlantList from "../components/PlantList/PlantList";
+import { plants } from "../data";
 
 const IndoorsPage = () => {
-  return (
-    <div>IndoorsPage</div>
-  )
-}
+  const indoorPlants = plants.filter((plant) => plant.type === "Indoor");
 
-export default IndoorsPage
+  return <PlantList plants={indoorPlants} />;
+};
+
+export default IndoorsPage;

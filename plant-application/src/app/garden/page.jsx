@@ -1,7 +1,10 @@
+import PlantList from "../components/PlantList/PlantList";
+import { plants } from "../data"
 
 const GardenPage = () => {
+  const gardenPlants = plants.filter((plant) => plant.type === 'Garden');
   return (
-    <div>GardenPage</div>
+    <PlantList plants={gardenPlants} />
   )
 }
 

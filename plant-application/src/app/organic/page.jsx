@@ -1,7 +1,9 @@
-
+import PlantList from "../components/PlantList/PlantList"
+import { plants } from "../data"
 const OrganicPage = () => {
+  const organicPlants = plants.filter((plant) => plant.type === 'Organic')
   return (
-    <div>OrganicPage</div>
+    <PlantList plants={organicPlants} />
   )
 }
 

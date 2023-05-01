@@ -9,8 +9,6 @@ const PlantCard = ({ plant }) => {
         </div>
         <img
           alt="plant"
-          width="80%"
-          height="auto"
           className={styles.cardPlantPic}
           src="/images/plant1.jpg"
         />
