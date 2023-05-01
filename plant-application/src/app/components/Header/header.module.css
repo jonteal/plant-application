@@ -2,8 +2,6 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* margin-left: 15px;
-  margin-top: 15px; */
 }
 
 .flowerCount {
@@ -21,4 +19,11 @@
 
 .greeting {
   margin-left: 10px;
+}
+
+.headerComponents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
 }
