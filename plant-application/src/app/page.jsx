@@ -1,46 +1,43 @@
 import Link from "next/link";
-import PlantList from "./components/PlantList";
+import PlantList from "./components/PlantList/PlantList";
 
 const plants = [
   {
     id: 1,
-    name: 'Monstera',
-    picture: '',
-    type: 'Indoor',
-    price: 55
+    name: "Monstera",
+    picture: "",
+    type: "Indoor",
+    price: 55,
   },
   {
     id: 2,
-    name: 'Aloe Vera',
-    picture: '',
-    type: 'Indoor',
-    price: 37
+    name: "Aloe Vera",
+    picture: "",
+    type: "Indoor",
+    price: 37,
   },
   {
     id: 3,
-    name: 'Snake Plant',
-    picture: '',
-    type: 'Indoor',
-    price: 45
+    name: "Snake Plant",
+    picture: "",
+    type: "Indoor",
+    price: 45,
   },
   {
     id: 4,
-    name: 'Dracaena',
-    picture: '',
-    type: 'Outdoor',
-    price: 127
+    name: "Dracaena",
+    picture: "",
+    type: "Outdoor",
+    price: 127,
   },
-]
-
-console.log('plants: ', plants);
-
+];
 
 const HomePage = () => {
-  return(
-    
+  return (
     <div>
-    <PlantList plants={plants} />
-  </div>)
+      <PlantList plants={plants} />
+    </div>
+  );
 };
 
 export default HomePage;

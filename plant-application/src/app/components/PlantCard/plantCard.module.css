@@ -1,0 +1,80 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: white;
+  margin-top: 20px;
+  height: 90%;
+}
+
+.cardRowOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardPlantNameContainer {
+  width: 15%;
+}
+
+.cardPlantName {
+  font-weight: bold;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  height: 110px;
+  width: 110px;
+}
+
+.cardPlantPic {
+  /* width: 100px;
+  height: 100px; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cardRowTwo {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardPlantInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cardAddPlantBtn {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: x-large;
+}
+
+.cardPlantType {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 100;
+  color: rgb(137, 137, 137);
+}
+
+.cardDollarSign {
+  font-size: small;
+}
+
+.cardPlantPrice {
+  font-weight: bold;
+  /* margin-top: 0.2em;
+  margin-bottom: 0.2em; */
+}
