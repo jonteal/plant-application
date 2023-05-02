@@ -23,6 +23,11 @@
   white-space: nowrap;
   height: 110px;
   width: 110px;
+  z-index: 1;
+}
+
+.cardPlantLink {
+  color: black;
 }
 
 .cardPlantPic {
@@ -32,6 +37,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   object-fit: cover;
+  z-index: 0;
 }
 
 .cardRowTwo {
